@@ -1,0 +1,21 @@
+/* CSS tùy chỉnh cho Footer */
+footer .col-md-4 {
+    flex: 0 0 25%; /* Logo chiếm 25% */
+    max-width: 25%;
+  }
+  
+  footer .col-md-4:nth-child(2),
+  footer .col-md-4:nth-child(3) {
+    flex: 0 0 37.5%; /* Hai phần còn lại chia đều 75% */
+    max-width: 37.5%;
+  }
+  
+  @media (max-width: 768px) {
+    footer .col-md-4,
+    footer .col-md-4:nth-child(2),
+    footer .col-md-4:nth-child(3) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  

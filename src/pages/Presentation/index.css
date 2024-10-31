@@ -1,0 +1,73 @@
+.img-container {
+    width: 85%;
+    height: 200px; 
+    overflow: hidden; 
+    position: relative; 
+    display: flex; /* Thêm dòng này */
+    justify-content: center; /* Thêm dòng này */
+    align-items: center; /* Thêm dòng này */
+    margin: 0 auto; /* Thêm dòng này để căn giữa */
+  }
+  
+  .img-container img {
+    width: 100%; 
+    height: auto; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease; 
+  }
+  
+  .img-container img:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    cursor: pointer;
+  }
+  
+  .text__img {
+    color: #27AAE1;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+
+
+
+/* ---------------------------------------------- partner -----------------------------*/
+.imgPartner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ddd; /* Đường viền xung quanh */
+    border-radius: 8px; /* Bo góc */
+    padding: 10px; /* Khoảng cách giữa border và ảnh */
+    background-color: #fff; /* Màu nền trắng */
+    width: 100%; /* Chiếm toàn bộ chiều rộng của cột */
+    max-width: 150px; /* Kích thước tối đa cho mỗi ảnh */
+  }
+  
+  .imgPartner-container img {
+    max-width: 100%; /* Đảm bảo ảnh không vượt quá thẻ chứa */
+    height: auto; /* Đảm bảo tỉ lệ khung hình */
+  }
+  
+  @media (min-width: 576px) { /* Dưới 576px (sm) */
+    .imgPartner-container {
+      max-width: 200px; /* Thay đổi kích thước cho kích thước nhỏ hơn */
+    }
+  }
+  
+  @media (min-width: 768px) { /* Dưới 768px (md) */
+    .imgPartner-container {
+      max-width: 250px; /* Thay đổi kích thước cho kích thước trung bình */
+    }
+  }
+  
+  @media (min-width: 992px) { /* Dưới 992px (lg) */
+    .imgPartner-container {
+      max-width: 300px; /* Thay đổi kích thước cho kích thước lớn */
+    }
+  }
+  
+
+  

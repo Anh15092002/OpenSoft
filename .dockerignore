@@ -1,0 +1,28 @@
+# Dependencies
+node_modules
+npm-debug.log
+
+# Build output
+dist
+build
+
+# Version control
+.git
+.gitignore
+
+# Environment files
+.env
+.env.localA
+.env.*.local
+
+# IDE files
+.idea
+.vscode
+
+# Logs
+logs
+*.log
+
+# System Files
+.DS_Store
+Thumbs.db
